@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input type 기초</Canvas></title>
+</head>
+<body>
+    <input type="color"> color <br>
+    <input type="date"> data <br>
+    <input type="datetime"> datetime <br>
+    <input type="datetime-local"> datetime-local <br>
+    <input type="email"> email <br>
+    <input type="month"> month <br>
+    <input type="number"> number <br>
+    <input type="range"> range <br>
+    <input type="search"> search <br>
+    <input type="tel"> tel <br>
+    <input type="time"> time <br>
+    <input type="url"> url <br>
+    <input type="week"> week <br>
+</body>
+</html>
