@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport"
+         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>가상 선택자</title>
+ 
+   <style>
+       h1 {
+           font-size: 2.5rem;
+           color: #25a9bd;
+       }
+       section {
+           padding-inline: 10px;
+       }
+       section:first-of-type {
+           color: #bc1212;
+       }
+       section:last-of-type:first-letter {
+           font-size: 2.4rem;
+           float: left;
+           padding: 0 2px;
+           margin: -1px 3px 0 0;
+           font-weight: bold;
+           color: #f00;
+       }
+       section em {
+           display: block;
+           text-align: center;
+           padding: 15px;
+           position: relative;
+           font-family: normal;
+           font-weight: inherit;
+       }
+       section em:before {
+           content: "\f10d";
+           padding-right: 0.5em;
+       }
+       section em:after {
+           content: "f10e";
+           padding-left: 0.5em;
+       }
+       form label {
+           width: 60px;
+           display: inline-block;
+       }
+       form input {
+           height: 1.8em;
+           border: 1px solid #ccc;
+           padding: 2px 5px;
+           border-radius: 3px;
+       }
+       input:enabled {
+           background-color: #f0f0f0;
+       }
+       input:focus {
+           background-color: #cee;
+           border-color: red;
+       }
+       input:disabled {
+           background-color: #c9c9c9;
+       }
+   </style>
+</head>
+<body>
+   <header>
+       <h1 class="logo">사이트 로고</h1>
+       <ul>
+           <li>
+               <a href="#">메뉴 1</a>
+           </li>
+           <li>
+               <a href="#">메뉴 2</a>
+           </li>
+       </ul>
+   </header>
+   <article>
+       <section>
+           <h2>부제목</h2>
+           <ul>
+               <li>리스트 1</li>
+               <li>리스트 2</li>
+               <li>리스트 3</li>
+           </ul>
+       </section>
+ 
+       <aside>
+           <h2>사이드바 제목</h2>
+           <ul>
+               <li>사이드 메뉴 1</li>
+               <li>사이드 메뉴 2</li>
+               <li>사이드 메뉴 3</li>
+           </ul>
+       </aside>
+   </article>
+   <footer>
+       푸터 부분
+   </footer>
+</body>
+</html>
