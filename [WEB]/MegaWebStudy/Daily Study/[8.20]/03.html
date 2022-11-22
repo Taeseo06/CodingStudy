@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport"
+         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>박스사이징 이해</title>
+   <style>
+       .box1,
+       .box2,
+       .box3 {
+           width: 150px;
+           height: 100px;
+           border: 2px solid red;
+           margin: 15px;
+       }
+       .box2 {
+           padding: 20px;
+           width: 110px;  /*1*/
+           height: 60px;  /*2*/
+       }
+       .box3 {
+           padding: 20px;
+           box-sizing: border-box;  /*3*/
+       }
+   </style>
+</head>
+<body>
+   <div class="box1">
+       여기는 box1
+   </div>
+   <div class="box2">
+       여기는 box2
+   </div>
+   <div class="box3">
+       여기는 box3
+   </div>
+</body>
+</html>
