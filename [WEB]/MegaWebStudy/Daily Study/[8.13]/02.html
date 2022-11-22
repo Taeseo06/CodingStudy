@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport"
+         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>태그 선택자</title>
+ 
+   <style>
+       header {
+           height: 70px;
+           background-color: #f0f0f0;
+           padding: 10px;
+       }
+       header h1 {
+           float: left;
+           font-size: 1.8rem;
+       }
+       header ul {
+           float: left;
+       }
+       header ul li {
+           display: inline-block;
+       }
+       article {
+           min-height: 500px;
+       }
+       article section {
+           float: left;
+       }
+       article aside {
+           float: right;
+           width: 200px;
+           background-color: #c0dce7;
+           min-height: 500px;
+           padding: 10px 20px;
+           box-sizing: border-box;
+       }
+       footer {
+           height: 10px;
+           background-color: #fedd31;
+           padding: 20px;
+           text-align: center;
+       }
+   </style>
+</head>
+<body>
+   <header>
+       <h1>사이트 로고</h1>
+       <ul>
+           <li>
+               <a href="#">메뉴 1</a>
+           </li>
+           <li>
+               <a href="#">메뉴 2</a>
+           </li>
+       </ul>
+   </header>
+   <article>
+       <section>
+           <h2>부제목</h2>
+           <ul>
+               <li>리스트 1</li>
+               <li>리스트 2</li>
+               <li>리스트 3</li>
+           </ul>
+       </section>
+ 
+       <aside>
+           <h2>사이드바 제목</h2>
+           <ul>
+               <li>사이드 메뉴 1</li>
+               <li>사이드 메뉴 2</li>
+               <li>사이드 메뉴 3</li>
+           </ul>
+       </aside>
+   </article>
+   <footer>
+       푸터 부분
+   </footer>
+</body>
+</html>
