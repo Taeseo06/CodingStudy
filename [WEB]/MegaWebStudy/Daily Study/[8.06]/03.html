@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas 기초</Canvas></title>
+</head>
+<body onload="init()">
+    <canvas id="canvas" width="595" height="423"></canvas>
+   
+    <script>
+        function init() {
+            var canvas = document.getElementById("canvas");
+            var ctx = canvas.getContext("2d");
+            ctx.beginPaht();  // 경로의 시작을 알림
+            ctx.moveTo(0, 0);  // x축 0 y축 0 부터
+            ctx.lineTo(500, 300);  // x축 500 y축 300까지
+            ctx.lineWidth = 2;  // 선의 두께는 2
+            ctx.strokeStyle = "#0033ff";  // 선 색상은 파란색
+            ctx.stroke();  // 선을 그려줌
+ 
+            var canvas = document.getElementById("Canvas1");
+            var ctx = canvas.getContext("2d");
+            ctx.beginPath();
+            ctx.moveTo(0, 0);
+            ctx.lineTo(500, 300);
+            ctx.moveTo(0, 300);
+            ctx.lineTo(500, 0);
+            ctx.moveTo(250, 0);
+            ctx.lineTo(250, 300);
+            ctx.moveTo(0, 150);
+            ctx.lineTo(500, 150);
+            ctx.lineWidth = 1;
+            ctx.strokeStyle = "black";
+            ctx.stroke();
+        }
+        // 여기에 그림을 그리기 위한 코드 들어감
+    </script>
+</body>
+</html>
