@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport"
+         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>태그 선택자</title>
+ 
+   <style>
+       * {
+           margin: 0;
+           padding: 0;
+       }
+       body {
+           background-color: #ccc;
+       }
+       header,
+       footer {
+           height: 70px;
+           background-color: #f0f0f0;
+           padding: 10px;
+       }
+       header h1 {
+           float: left;
+           font-size: 1.8rem;
+       }
+       header ul {
+           float: right;
+           margin-right: 20px;
+           margin-top: 25px;
+       }
+       header ul li {
+           display: inline-block;
+       }
+       header ul li a {
+           padding: 10px 20px;
+           text-decoration: none;
+           border: 1px solid #ccc;
+           margin-right: 10px;
+       }
+       article {
+           min-height: 500px;
+           background-color: #fff;
+       }
+       article section {
+           float: left;
+           padding: 20px;
+       }
+       article aside {
+           float: right;
+           width: 200px;
+           background-color: #c0dce7;
+           min-height: 500px;
+           padding: 10px 20px;
+           box-sizing: border-box;
+       }
+       section h2,
+       aside h2 {
+           font-weight: normal;
+           font-size: 1.4rem;
+       }
+       section ul,
+       aside ul {
+           padding: 10px 20px;
+       }
+       footer {
+           height: 30px;
+           text-align: center;
+       }
+       .container {
+           width: 900px;
+           margin: 0 auto;
+       }
+       h1.logo {
+           background-size: cover;
+           text-indent: -9999px;
+           height: 40px;
+           width: 147px;
+           margin-left: 10px;
+           margin-top: 10pxa;
+       }
+   </style>
+</head>
+<body>
+   <header>
+       <h1 class="logo">사이트 로고</h1>
+       <ul>
+           <li>
+               <a href="#">메뉴 1</a>
+           </li>
+           <li>
+               <a href="#">메뉴 2</a>
+           </li>
+       </ul>
+   </header>
+   <article>
+       <section>
+           <h2>부제목</h2>
+           <ul>
+               <li>리스트 1</li>
+               <li>리스트 2</li>
+               <li>리스트 3</li>
+           </ul>
+       </section>
+ 
+       <aside>
+           <h2>사이드바 제목</h2>
+           <ul>
+               <li>사이드 메뉴 1</li>
+               <li>사이드 메뉴 2</li>
+               <li>사이드 메뉴 3</li>
+           </ul>
+       </aside>
+   </article>
+   <footer>
+       푸터 부분
+   </footer>
+</body>
+</html>
